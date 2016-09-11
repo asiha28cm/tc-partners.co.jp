@@ -301,34 +301,35 @@ video {
  */
 
 h1 {
-  @include fontsize(20);
-  padding: 6,7px 0;
+  @include fontsize(80);
+  padding: 80px 0;
 }
 
 h2 {
-  @include fontsize(15);
-  padding: 8.3px 0;
+  @include fontsize(50);
+  padding: 50px 0;
 }
 
 h3 {
-  @include fontsize(11.7);
-  padding: 10px 0;
+  @include fontsize(40);
+  padding: 40px 0;
 }
 
 h4 {
-  @include fontsize(10);
-  padding: 13.3px 0;
+  @include fontsize(26);
+  padding: 26px 0;
 }
 
 h5 {
-  @include fontsize(8.3);
-  padding: 16.7px 0;
+  @include fontsize(22);
+  padding: 22px 0;
 }
 
 h6 {
-  @include fontsize(7.5);
-  padding: 23.3px 0;
+  @include fontsize(20);
+  padding: 20px 0;
 }
+
 
 /**
  * st-design.tokyoホーム
@@ -336,6 +337,11 @@ h6 {
 
 body {
   font-family: "a-otf-ud-shin-go-pr6n";
+}
+
+#logo,
+.logo {
+  font-family: "pragmatica-web";
 }
 
 .home-page {
@@ -382,7 +388,6 @@ body {
   @include opacity(0.8);
   &:hover {
     @include opacity(0.5);
-
   }
   span {
     position: absolute;
@@ -446,7 +451,6 @@ body {
   margin: 0 auto 0 0;
   padding: 200px 0 0 100px;
   #logo {
-    font-family: "pragmatica-web";
     @include fontsize(80);
     color: #fff;
     margin-top: 0;
@@ -476,6 +480,124 @@ body {
   }
 }
 
-#home-service {
+.flex-container {
+  display: flex;
+  justify-content: center;
 }
 
+#main {
+  padding: 55px 100px;
+  #home-service {
+    padding: 25px 0;
+    .title-wrapper {
+      border-bottom: 1px solid #000;
+      padding-bottom: 80px;
+      h2 {
+        text-align: center;
+      }
+      p {
+        @include fontsize(24);
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+      }
+    }
+  }
+  .flex-item {
+    margin: 30px;
+    width: 50%;
+  }
+  .row {
+    border-bottom: 1px solid #000;
+    min-height: 700px;
+    .service {
+      span {
+        @include fontsize(24);
+        display: block;
+        padding-bottom: 20px;
+      }
+      p {
+        @include fontsize(24);
+      }
+    }
+    .img-area {
+      border: 1px solid #999;
+    }
+  }
+  #home-news {
+    padding: 25px 0;
+    border-bottom: 1px solid #000;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    h2 {
+      text-align: center;
+    }
+    .news-area {
+      h4 {
+        padding: 6px 0;
+      }
+      p {
+        @include fontsize(24);
+      }
+    }
+  }
+}
+
+#footer {
+  padding: 10px 100px 20px;
+  background-color: #26425C;
+  color: #fff;
+  .flex-container {
+    align-items: center;
+    height: 400px;
+    .footer-logo {
+      width: 50%;
+      margin-left: 30px;
+      @include fontsize(40);
+      p {
+        display: block;
+        @include fontsize(20);
+        text-align: left;
+      }
+    }
+  }
+  .footer-contact {
+    width: 25%;
+    display: inline-block;
+    @include fontsize(22);
+    padding: 0 20px;
+    height: 300px;
+    ul {
+      list-style: none;
+      li {
+        padding-bottom: 20px;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        text-align: center;
+      }
+      .social-icon {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .footer-address {
+    width: 25%;
+    display: inline-block;
+    @include fontsize(22);
+    padding: 0 20px;
+    height: 300px;
+  }
+  p {
+    display: block;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+  }
+}

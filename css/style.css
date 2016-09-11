@@ -238,40 +238,44 @@ video {
  * h1,h2,h3,h4,h5,h6基本定義
  */
 h1 {
-  font-size: 20px;
-  font-size: 2rem;
-  padding: 6,7px 0; }
+  font-size: 80px;
+  font-size: 8rem;
+  padding: 80px 0; }
 
 h2 {
-  font-size: 15px;
-  font-size: 1.5rem;
-  padding: 8.3px 0; }
+  font-size: 50px;
+  font-size: 5rem;
+  padding: 50px 0; }
 
 h3 {
-  font-size: 11.7px;
-  font-size: 1.17rem;
-  padding: 10px 0; }
+  font-size: 40px;
+  font-size: 4rem;
+  padding: 40px 0; }
 
 h4 {
-  font-size: 10px;
-  font-size: 1rem;
-  padding: 13.3px 0; }
+  font-size: 26px;
+  font-size: 2.6rem;
+  padding: 26px 0; }
 
 h5 {
-  font-size: 8.3px;
-  font-size: 0.83rem;
-  padding: 16.7px 0; }
+  font-size: 22px;
+  font-size: 2.2rem;
+  padding: 22px 0; }
 
 h6 {
-  font-size: 7.5px;
-  font-size: 0.75rem;
-  padding: 23.3px 0; }
+  font-size: 20px;
+  font-size: 2rem;
+  padding: 20px 0; }
 
 /**
  * st-design.tokyoホーム
  */
 body {
   font-family: "a-otf-ud-shin-go-pr6n"; }
+
+#logo,
+.logo {
+  font-family: "pragmatica-web"; }
 
 .home-page {
   width: 100%;
@@ -377,7 +381,6 @@ body {
   margin: 0 auto 0 0;
   padding: 200px 0 0 100px; }
   .top-wrapper #logo {
-    font-family: "pragmatica-web";
     font-size: 80px;
     font-size: 8rem;
     color: #fff;
@@ -408,5 +411,103 @@ body {
         .top-wrapper nav li a:hover {
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
           opacity: 0.9; }
+
+.flex-container {
+  display: flex;
+  justify-content: center; }
+
+#main {
+  padding: 55px 100px; }
+  #main #home-service {
+    padding: 25px 0; }
+    #main #home-service .title-wrapper {
+      border-bottom: 1px solid #000;
+      padding-bottom: 80px; }
+      #main #home-service .title-wrapper h2 {
+        text-align: center; }
+      #main #home-service .title-wrapper p {
+        font-size: 24px;
+        font-size: 2.4rem;
+        width: 100%;
+        max-width: 600px;
+        margin: auto; }
+  #main .flex-item {
+    margin: 30px;
+    width: 50%; }
+  #main .row {
+    border-bottom: 1px solid #000;
+    min-height: 700px; }
+    #main .row .service span {
+      font-size: 24px;
+      font-size: 2.4rem;
+      display: block;
+      padding-bottom: 20px; }
+    #main .row .service p {
+      font-size: 24px;
+      font-size: 2.4rem; }
+    #main .row .img-area {
+      border: 1px solid #999; }
+  #main #home-news {
+    padding: 25px 0;
+    border-bottom: 1px solid #000; }
+    #main #home-news img {
+      width: 100%;
+      height: auto; }
+    #main #home-news h2 {
+      text-align: center; }
+    #main #home-news .news-area h4 {
+      padding: 6px 0; }
+    #main #home-news .news-area p {
+      font-size: 24px;
+      font-size: 2.4rem; }
+
+#footer {
+  padding: 10px 100px 20px;
+  background-color: #26425C;
+  color: #fff; }
+  #footer .flex-container {
+    align-items: center;
+    height: 400px; }
+    #footer .flex-container .footer-logo {
+      width: 50%;
+      margin-left: 30px;
+      font-size: 40px;
+      font-size: 4rem; }
+      #footer .flex-container .footer-logo p {
+        display: block;
+        font-size: 20px;
+        font-size: 2rem;
+        text-align: left; }
+  #footer .footer-contact {
+    width: 25%;
+    display: inline-block;
+    font-size: 22px;
+    font-size: 2.2rem;
+    padding: 0 20px;
+    height: 300px; }
+    #footer .footer-contact ul {
+      list-style: none; }
+      #footer .footer-contact ul li {
+        padding-bottom: 20px; }
+      #footer .footer-contact ul a {
+        display: block;
+        text-decoration: none;
+        color: #fff;
+        text-align: center; }
+      #footer .footer-contact ul .social-icon {
+        display: flex;
+        justify-content: center; }
+  #footer .footer-address {
+    width: 25%;
+    display: inline-block;
+    font-size: 22px;
+    font-size: 2.2rem;
+    padding: 0 20px;
+    height: 300px; }
+  #footer p {
+    display: block;
+    text-align: center; }
+  #footer h3 {
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
